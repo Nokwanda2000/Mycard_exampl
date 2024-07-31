@@ -1,5 +1,6 @@
 import { CiHeart } from "react-icons/ci";
-
+import { IoBedOutline } from "react-icons/io5";
+import { PiBathtubLight } from "react-icons/pi";
 
 function Card(){
 return(
@@ -10,6 +11,8 @@ return(
       height:"700px",
       borderRadius:"10px",
       boxShadow:"10px 10px  rgb(230, 230, 230)",
+      rowGap:"none",
+      gap:"none"
     
         
       
@@ -20,8 +23,8 @@ return(
 
         <div className="div1" style={{
             
-            // width:"100%",
-            // height:"40%",
+            width:"100%",
+            height:"40%",
             borderTopRightRadius:"10px",
             borderTopLeftRadius:"10px"
         }}>
@@ -35,7 +38,7 @@ return(
     
 }}/> 
 
-        </div>
+     </div>   
 
         <div className="2" style={{
             backgroundColor:"white",
@@ -51,23 +54,27 @@ return(
           <h3>742 Evergreen Terrance</h3>
 
         </div>
+        
 
         <div className="3" style={{
-            backgroundColor:"yellow",
+            backgroundColor:"white",
             width:"100%",
             height:"15%"
 
         }}>
+            <h4><IoBedOutline />3 Bedroom         <PiBathtubLight />  2Bathrooms</h4> 
 
         </div>
 
         <div className="4" style={{
-            backgroundColor:"orange",
+            backgroundColor:"white",
             width:"100%",
             height:"15%",
             borderBottomRightRadius:"10px",
             borderBottomLeftRadius:"10px",
         }}>
+            
+            <h4>REALTOR</h4>
 
         </div>
 
