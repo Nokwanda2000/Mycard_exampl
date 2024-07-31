@@ -6,9 +6,9 @@ return(
     <>
      <div className="main" style={{
       backgroundColor:"red",
-      width:"400px",
+      width:"500px",
       height:"700px",
-      borderRadius:"20px",
+      borderRadius:"10px",
       boxShadow:"10px 10px  rgb(230, 230, 230)",
     
         
@@ -20,10 +20,10 @@ return(
 
         <div className="div1" style={{
             
-            width:"100%",
-            height:"40%",
-            borderTopRightRadius:"20px",
-            borderTopLeftRadius:"20px"
+            // width:"100%",
+            // height:"40%",
+            borderTopRightRadius:"10px",
+            borderTopLeftRadius:"10px"
         }}>
 
 <CiHeart className="icon" style={{
@@ -38,11 +38,17 @@ return(
         </div>
 
         <div className="2" style={{
-            backgroundColor:"pink",
+            backgroundColor:"white",
             width:"100%",
             height:"30%",
           
-        }}>
+        }}
+    
+        >
+            
+          <h3>DETACHED HOUSE . 5Y OLD</h3 >  
+          <h1>$750,000</h1>
+          <h3>742 Evergreen Terrance</h3>
 
         </div>
 
@@ -59,8 +65,8 @@ return(
             backgroundColor:"orange",
             width:"100%",
             height:"15%",
-            borderBottomRightRadius:"20px",
-            borderBottomLeftRadius:"20px",
+            borderBottomRightRadius:"10px",
+            borderBottomLeftRadius:"10px",
         }}>
 
         </div>
