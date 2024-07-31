@@ -17,8 +17,13 @@ body{
   height:40% ;
 
 }
-
+/* 
 .icon:active{
   background-color: rgb(244, 117, 157);
   border-radius: 50%;
+} */
+
+.icon{
+  float: right;
+
 }
