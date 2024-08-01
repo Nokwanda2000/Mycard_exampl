@@ -28,18 +28,10 @@ return(
             width:"100%",
             height:"40%",
             borderTopRightRadius:"10px",
-            borderTopLeftRadius:"10px"
+            borderTopLeftRadius:"10px",
+            stroke:"black"
         }}>
-{/* 
-<CiHeart className="icon" style={{
-    fontSize:"40px",
-    color:"red",
-    marginRight:"-400px",
-    transform: "translate(-10%, -10%)",
-    cursor:"pointer",
-    marginBottom:"-40px"
-    
-}}/>  */}
+
 <Hover style={{
 
 
@@ -50,6 +42,8 @@ return(
             backgroundColor:"white",
             width:"100%",
             height:"30%",
+          
+
             
           
         }}
@@ -79,7 +73,12 @@ return(
             height:"15%"
 
         }}>
-            <span><IoBedOutline />3 Bedroom       <PiBathtubLight />  2 Bathrooms</span>
+            <span style={{ 
+              fontSize:"20px",
+              marginRight:"20px"
+
+            }}><IoBedOutline />3 Bedroom       
+              <PiBathtubLight />  2 Bathrooms</span>
 
         </div>
 
@@ -93,7 +92,8 @@ return(
         }}>
             
             <span style={{
-                marginRight:"300px"
+                marginRight:"300px",
+                fontFamily:'-moz-initial'
             }}>REALTOR</span>
 
 
@@ -102,7 +102,10 @@ return(
 
 
            
-            <span>
+            <span style={{
+              float:"left",
+              
+            }} >
             <img style={{
             width:"50px",
             height:"50px",
@@ -111,11 +114,18 @@ return(
            }}
            src="./src/assets/GIRL.jpg" ></img>
 
-
-
-           Tiffany Heffner
-           {/* <p>(555) 555- 4321</p> */}
-           </span>
+</span>
+           <span style={{
+            float:"left",
+            marginLeft:"80px",
+            top:"-40px"
+           }}> Tiffany Heffner</span>
+          
+           
+           <span style={{
+            float:"left"
+           }}>(555) 555- 4321</span>
+          
         </div>
 
      </div>
