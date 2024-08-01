@@ -20,6 +20,9 @@ function App() {
   let fruits = ["apple", "banana", "cherry"];
   localStorage.setItem("fruits", JSON.stringify(fruits));
 
+
+  let house = {housetype:"detached house", ageOfThehouse:5, price:"$750,000", address:"742 Evergreen Terrace", bathrooms:2, bedrooms:"3", realtor:"Tiffany Heffner" ,phone:"(5555) 555 4321"}
+
   return (
     <>
     

@@ -7,7 +7,7 @@ import Hover from "./hover";
 
 
 
-function Card(){
+function Card({house}){
 return(
     <>
      <div className="main" style={{
