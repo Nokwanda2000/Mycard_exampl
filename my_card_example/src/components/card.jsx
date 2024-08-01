@@ -3,6 +3,10 @@ import { IoBedOutline } from "react-icons/io5";
 import { PiBathtubLight } from "react-icons/pi";
 import Hover from "./hover";
 
+
+
+
+
 function Card(){
 return(
     <>
@@ -55,13 +59,14 @@ return(
           }}
           >DETACHED HOUSE . 5Y OLD</span> 
 
-          <h3 style={{
+          <h3 className="number" style={{
             marginRight:"330px"
           }}
           >$750,000</h3>
 
           <h3 style={{
-            marginRight:"240px"
+            marginRight:"240px",
+            fontFamily:"-moz-initial"
           }}>742 Evergreen Terrance</h3>
 
         </div>
@@ -82,18 +87,21 @@ return(
 
         </div>
 
+
         <div className="4" style={{
-            backgroundColor:"white",
+            backgroundColor:"whitesmoke",
             width:"100%",
             height:"15%",
             borderBottomRightRadius:"10px",
             borderBottomLeftRadius:"10px",
+            borderBlockEnd:'30px'
             
         }}>
             
             <span style={{
                 marginRight:"300px",
-                fontFamily:'-moz-initial'
+                fontFamily:'-moz-initial',
+                float:"left"
             }}>REALTOR</span>
 
 
@@ -103,28 +111,34 @@ return(
 
            
             <span style={{
-              float:"left",
+           
+              marginRight:"320px"
               
             }} >
             <img style={{
             width:"50px",
             height:"50px",
             borderRadius:"50%",
-            marginRight:"240px"
+          // float:"right"
+          // position:"absolute"
            }}
            src="./src/assets/GIRL.jpg" ></img>
 
 </span>
-           <span style={{
-            float:"left",
+
+           {/* <span style={{
+            // float:"left",
             marginLeft:"80px",
-            top:"-40px"
-           }}> Tiffany Heffner</span>
+            // top:"-40px"
+            fontFamily:"fantasy"
+           }}>Tiffany Heffner</span>
           
            
            <span style={{
-            float:"left"
+            float:"left",
+            
            }}>(555) 555- 4321</span>
+            */}
           
         </div>
 
