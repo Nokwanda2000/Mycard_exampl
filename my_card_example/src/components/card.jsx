@@ -7,7 +7,10 @@ import Hover from "./hover";
 
 
 
-function Card({house}){
+function Card({accomodation}){
+
+  console.log(accomodation)
+  
 return(
     <>
      <div className="main" style={{
@@ -18,6 +21,7 @@ return(
       boxShadow:"10px 10px  rgb(230, 230, 240)",
       rowGap:"none",
       gap:"none",
+      
     
     
         
@@ -28,7 +32,7 @@ return(
      >
 
         <div className="div1" style={{
-            
+          // backgroundImage:'url(./assets/house.jpg)',
             width:"100%",
             height:"40%",
             borderTopRightRadius:"10px",
@@ -57,17 +61,19 @@ return(
           <span style={{
             marginRight:"200px"
           }}
-          >DETACHED HOUSE . 5Y OLD</span> 
+          >{accomodation.housetype}
+          {accomodation.ageOfThehouse}
+          </span> 
 
           <h3 className="number" style={{
             marginRight:"330px"
           }}
-          >$750,000</h3>
+          >{accomodation.priceOfthehouse}</h3>
 
           <h3 style={{
             marginRight:"240px",
-            fontFamily:"-moz-initial"
-          }}>742 Evergreen Terrance</h3>
+            fontFamily:"-moz-initial",
+          }}>{accomodation.addressOfthehouse}</h3>
 
         </div>
         
@@ -82,8 +88,8 @@ return(
               fontSize:"20px",
               marginRight:"20px"
 
-            }}><IoBedOutline />3 Bedroom       
-              <PiBathtubLight />  2 Bathrooms</span>
+            }}><IoBedOutline />{accomodation.NumberOfbedrooms}      
+              <PiBathtubLight />{accomodation.NumberOfbathrooms}</span>
 
         </div>
 
@@ -102,7 +108,7 @@ return(
                 marginRight:"300px",
                 fontFamily:'-moz-initial',
                 float:"left"
-            }}>REALTOR</span>
+            }}>{accomodation.realtorfullName}</span>
 
 
 
@@ -132,13 +138,13 @@ return(
             // top:"-40px"
             fontFamily:"fantasy"
            }}>Tiffany Heffner</span>
-          
+           */}
            
            <span style={{
             float:"left",
             
-           }}>(555) 555- 4321</span>
-            */}
+           }}>{accomodation.RealtorPhoneNumber}</span>
+           
           
         </div>
 
