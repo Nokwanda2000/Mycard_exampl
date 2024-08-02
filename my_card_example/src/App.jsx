@@ -19,7 +19,8 @@ function App() {
   localStorage.setItem("fruits", JSON.stringify(fruits));
 
 
-  let house = {housetype:"Detached house",picture:"../assets/house.jpg", ageOfThehouse: "5yr Old", priceOfthehouse:"R750,000", addressOfthehouse:"742 Evergreen Terrace", NumberOfbathrooms:"2Bath", NumberOfbedrooms:"3 Bed", realtorfullName:"Tiffany Heffner" ,RealtorPhoneNumber:"(5555) 555 4321"}
+  let house = {url:"",
+    housetype:"Detached house", ageOfThehouse: "5yr Old", priceOfthehouse:"R750,000", addressOfthehouse:"742 Evergreen Terrace", NumberOfbathrooms:"2Bath", NumberOfbedrooms:"3 Bed", realtorfullName:"Tiffany Heffner" ,RealtorPhoneNumber:"(5555) 555 4321"}
   localStorage.setItem('house',JSON.stringify(house));
 
   let housesForsale = [
@@ -76,18 +77,49 @@ function App() {
     localStorage.setItem("housesForsale",JSON.stringify(housesForsale)) 
 
     let houses = localStorage.getItem("housesForsale")
-    console.log(houses)
+    console.log(houses) ;
 
     localStorage.setItem("housesList",JSON.stringify(housesForsale))
 
-    function  Create(house){
 
-      houses = localStorage.getItem("houseList")
-      localStorage.setIte("HhouseList",JSON.stringify(house))
+
+
+    function  Create(newObject){
+ 
+    
+      let houses = localStorage.getItem("housesForsale")
+      // localStorage.setItem("housesForsale",JSON.stringify(housesForsale)) 
+      // houses = localStorage.getItem("houseList")
+      // console.log(houses)
+      // localStorage.setItem("houseList",JSON.stringify(housesForsale))
+
+      // const storedList = localStorage.getItem("housesForSale")
+      // console.log(storedList)
+      const List= JSON.parse(houses) || [];
+
+      
+      List.push(newObject);
+      const updatedList =JSON.stringify(List);
+
+      localStorage.setItem("houseList", updatedList);
+      localStorage.setItem("houseList",JSON.stringify(housesForsale))
 
     };
 
+    const newObject = {housetype:"4th house",
+      ageOfThehouse: "3yr Old",
+       priceOfthehouse:"R750,000", 
+       addressOfthehouse:"192 Eastwood Rd", 
+       NumberOfbathrooms:"2Bath", 
+       NumberOfbedrooms:"3 Bed", 
+       realtorfullName:"Love Goldberg",
+       RealtorPhoneNumber:"(333) 555 4321"};
 
+
+
+      Create(newObject);
+
+      
     function Read(){
 
     }

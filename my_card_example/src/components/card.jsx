@@ -15,7 +15,7 @@ return(
     <>
      <div className="main" style={{
     //   backgroundColor:"red",
-      width:"470px",
+      width:"400px",
       height:"600px",
       borderRadius:"10px",
       boxShadow:"10px 10px  rgb(230, 230, 240)",
@@ -33,6 +33,7 @@ return(
 
         <div className="div1" style={{
           // backgroundImage:'url(./assets/house.jpg)',
+        //   backgroundImage:`url(${require("./assets/house.jpg")})`,
             width:"100%",
             height:"40%",
             borderTopRightRadius:"10px",
@@ -44,12 +45,15 @@ return(
 
 
 }}/>
+{accomodation.url}
      </div>   
+     <hr></hr>
 
         <div className="2" style={{
             backgroundColor:"white",
             width:"100%",
             height:"30%",
+            
           
 
             
@@ -66,18 +70,19 @@ return(
           </span> 
 
           <h3 className="number" style={{
-            marginRight:"330px"
+            marginRight:"230px"
           }}
           >{accomodation.priceOfthehouse}</h3>
 
-          <h3 style={{
-            marginRight:"240px",
-            fontFamily:"-moz-initial",
-          }}>{accomodation.addressOfthehouse}</h3>
+          <h4 style={{
+            marginRight:"220px",
+            fontFamily:"normal",
+            fontWeight:"500",
+          }}>{accomodation.addressOfthehouse}</h4>
 
         </div>
         
-
+<hr></hr>
         <div className="3" style={{
             backgroundColor:"white",
             width:"100%",
@@ -92,7 +97,7 @@ return(
               <PiBathtubLight />{accomodation.NumberOfbathrooms}</span>
 
         </div>
-
+<hr></hr>
 
         <div className="4" style={{
             backgroundColor:"whitesmoke",
@@ -140,10 +145,11 @@ return(
            }}>Tiffany Heffner</span>
            */}
            
-           <span style={{
+           <p style={{
             float:"left",
+            position:"relative"
             
-           }}>{accomodation.RealtorPhoneNumber}</span>
+           }}>{accomodation.RealtorPhoneNumber}</p>
            
           
         </div>
